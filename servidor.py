@@ -68,6 +68,7 @@ def conexao(con):
     with con:
         while True:
             msg = con.recv(1024)
+            msg = msg.decode("utf-8")
             msg = json.loads(msg)
             if msg["flag"] == "MSG":
                 flagMSG(msg["content"], con)

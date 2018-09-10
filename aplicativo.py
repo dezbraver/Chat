@@ -6,7 +6,7 @@ class Login:
     def __init__(self):
         self.root = Tk()
         self.root.title("Chat - Login")
-        self.root.iconbitmap("icon.ico")
+        #self.root.iconbitmap("icon.ico")
         self.root.resizable(0, 0)
         self.root.configure(bg="#505050", pady=20, padx=20)
 
@@ -217,6 +217,7 @@ class Login:
     def recebendo(self):
         while True:
             msg = self.s.recv(512)
+            msg = msg.decode("utf-8")
             msg = json.loads(msg)
             if msg["rflag"] == "MSG":
                 self.printMSG(msg["rcontent"])
@@ -297,7 +298,7 @@ class Login:
 
     def adicionarAmigo(self, event):
         self.add = Toplevel()
-        self.add.iconbitmap("icon.ico")
+        #self.add.iconbitmap("icon.ico")
         self.add.title("Chat - Adicionar Amigo")
         self.add.configure(bg="#505050", padx = 20, pady=20)
         self.add.resizable(0, 0)
