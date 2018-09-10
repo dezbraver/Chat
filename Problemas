@@ -1,0 +1,11 @@
+Problemas:
+
+1 - quando adicionar amigo adicionar tbm no outro cliente sem precisar adicionar tbm
+
+2 - só era pra mostrar as mensagens recebidas quando o usuário clicasse na pessoa com quem quer falar
+
+3 - quando logar ele atualizar as conexões (BROADCAST) protocolo pra todos alterarem seus grupos em tempo real
+
+4- colocar scrollbar na área de iserir mensagem para envio quando aumenta de tamanho
+
+5 - printar que o usuários desconectou (mensagem enviada após receber click no X)
